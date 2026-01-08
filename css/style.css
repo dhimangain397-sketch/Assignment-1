@@ -42,6 +42,7 @@ ul, li {
 
 }
 
+
 /*---- common css end ----*/
 
 /*---- nav section start ---- */
@@ -69,3 +70,79 @@ header .menu ul li a {
 }
 
 /*---- nav section end ---- */
+
+/*---- banner section start ---- */
+.banner {
+    background-image: url(./../assets/banner-image.jpg);
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+
+}
+
+.banner .banner-content {
+    text-align: center;
+    padding: 115.5px 0 163.5px 0;
+}
+
+.banner .banner-content .first-content {
+    display: inline-block;
+}
+
+.banner .banner-content .first-content h2 {
+    padding: 8px 12px;
+    background-color: #FFFFFF;
+    border-radius: 100px;
+    font-weight: 500;
+    color: #469165;
+    margin-bottom: 16px;
+    line-height: 100%;
+    display: flex;
+}
+
+.banner .banner-content .first-content h2 span {
+    margin-right: 6px;
+}
+
+.banner .banner-content h1 {
+    font-weight: 700;
+    color: #469165;
+    font-size: 72px;
+    text-transform: capitalize;
+}
+
+.banner .banner-content h1 span {
+    font-weight: 700;
+    color: #FFFFFF;
+    font-size: 72px;
+}
+
+.banner .banner-content p {
+    margin: 6px 0 32px 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.banner .banner-content .button-grup {
+    display: inline-block;
+}
+
+.banner .banner-content .button-grup .btn {
+    display: flex;
+}
+
+.banner .banner-content .button-grup .btn img {
+    margin-left: 10px;
+}
+
+.banner .banner-content .button-grup .btn:hover {
+    background-color: transparent;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+}
+
+/*---- banner section end ---- */
