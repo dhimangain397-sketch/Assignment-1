@@ -69,6 +69,11 @@ header .menu ul li a {
 
 }
 
+header .menu ul li a:hover {
+    color: #469165;
+
+}
+
 /*---- nav section end ---- */
 
 /*---- banner section start ---- */
@@ -79,7 +84,21 @@ header .menu ul li a {
     background-position: center;
     background-repeat: no-repeat;
     object-fit: cover;
+    position: relative;
+    z-index: 1;
 
+}
+
+.banner .overley::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #001931;
+    opacity: 80%;
+    z-index: -1;
 }
 
 .banner .banner-content {
@@ -129,6 +148,7 @@ header .menu ul li a {
 
 .banner .banner-content .button-grup {
     display: inline-block;
+    margin-right: 16px;
 }
 
 .banner .banner-content .button-grup .btn {
@@ -146,3 +166,73 @@ header .menu ul li a {
 }
 
 /*---- banner section end ---- */
+
+/*---- notes section start ---- */
+.notes-area .section-heading {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.notes-area .section-heading h2 {
+    font-weight: 700;
+    font-size: 48px;
+    color: #001931;
+    text-transform: capitalize;
+}
+
+.notes-area .section-heading p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #627382;
+    margin-top: 16px;
+
+}
+
+.notes-area .card-area {
+    display: flex;
+    gap: 24px;
+}
+
+.notes-area .card-area .card {
+    text-align: center;
+    box-shadow: 0 0 8px 0 #00000018;
+    border-radius: 8px;
+    padding: 65px 30px 30px;
+    margin-top: 60px;
+}
+
+.notes-area .card-area .card:hover {
+    background-color: #F95555;
+}
+
+.notes-area .card-area .card .icon {
+    padding: 15px;
+    background-color: #F95555;
+    border-radius: 100%;
+    border: 1px solid transparent;
+}
+
+.notes-area .card-area .card:hover .icon {
+    border: 1px solid #FFFFFF;
+}
+
+.notes-area .card-area .card h3 {
+    font-weight: 600;
+    font-size: 24px;
+    color: #001931;
+    margin: 16px 0;
+    text-transform: capitalize;
+}
+
+.notes-area .card-area .card p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #627382;
+}
+
+.notes-area .card-area .card:hover h3,
+.notes-area .card-area .card:hover p {
+    color: #FFFFFF;
+}
+/*---- notes section end ---- */
