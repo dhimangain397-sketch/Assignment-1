@@ -9,8 +9,63 @@
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
+    font-size: 16px;
 }
 
+a {
+    text-decoration: none;
+}
 
+ul, li {
+    list-style: none;
+}
+
+.container {
+    width: 1360px;
+    margin: 0 auto;
+}
+
+.btn {
+    padding: 12.5px 16px;
+    font-weight: 600;
+    background-color: #469165;
+    color: #FFFFFF;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: #469165;
+    border: 1px solid #469165;
+
+}
 
 /*---- common css end ----*/
+
+/*---- nav section start ---- */
+header {
+    height: 92px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .menu ul {
+    display: flex;
+
+}
+
+header .menu ul li {
+    margin: 0 32px;
+
+}
+
+header .menu ul li a {
+    color: #000000;
+    font-weight: 500;
+
+}
+
+/*---- nav section end ---- */
