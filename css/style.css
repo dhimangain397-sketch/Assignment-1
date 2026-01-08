@@ -21,7 +21,7 @@ ul, li {
 }
 
 .container {
-    width: 1360px;
+    max-width: 1360px;
     margin: 0 auto;
 }
 
@@ -42,6 +42,54 @@ ul, li {
 
 }
 
+.button-grup,
+.button-grup-1 {
+    display: inline-block;
+    margin-right: 16px;
+}
+
+.button-grup .btn,
+.button-grup-1 .btn {
+    display: flex;
+}
+
+.button-grup .btn img,
+.button-grup-1 .btn img {
+    margin-left: 10px;
+}
+
+.button-grup .btn:hover {
+    background-color: transparent;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+}
+
+.button-grup-1 .btn:hover {
+    background-color: #F95555;
+    color: #FFFFFF;
+    border: 1px solid #F95555;
+}
+
+.section-heading {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.section-heading h2 {
+    font-weight: 700;
+    font-size: 48px;
+    color: #001931;
+    text-transform: capitalize;
+}
+
+.section-heading p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #627382;
+    margin-top: 16px;
+
+}
 
 /*---- common css end ----*/
 
@@ -83,7 +131,7 @@ header .menu ul li a:hover {
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    object-fit: cover;
+    background-size: cover;
     position: relative;
     z-index: 1;
 
@@ -146,48 +194,10 @@ header .menu ul li a:hover {
     color: #FFFFFF;
 }
 
-.banner .banner-content .button-grup {
-    display: inline-block;
-    margin-right: 16px;
-}
-
-.banner .banner-content .button-grup .btn {
-    display: flex;
-}
-
-.banner .banner-content .button-grup .btn img {
-    margin-left: 10px;
-}
-
-.banner .banner-content .button-grup .btn:hover {
-    background-color: transparent;
-    color: #FFFFFF;
-    border: 1px solid #FFFFFF;
-}
 
 /*---- banner section end ---- */
 
 /*---- notes section start ---- */
-.notes-area .section-heading {
-    text-align: center;
-    margin-top: 60px;
-}
-
-.notes-area .section-heading h2 {
-    font-weight: 700;
-    font-size: 48px;
-    color: #001931;
-    text-transform: capitalize;
-}
-
-.notes-area .section-heading p {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    color: #627382;
-    margin-top: 16px;
-
-}
 
 .notes-area .card-area {
     display: flex;
@@ -196,14 +206,17 @@ header .menu ul li a:hover {
 
 .notes-area .card-area .card {
     text-align: center;
-    box-shadow: 0 0 8px 0 #00000018;
+    box-shadow: 0 -5px 8px 0 #00000018;
     border-radius: 8px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
     padding: 65px 30px 30px;
     margin-top: 60px;
 }
 
 .notes-area .card-area .card:hover {
     background-color: #F95555;
+    border-radius: 8px;
 }
 
 .notes-area .card-area .card .icon {
@@ -236,3 +249,117 @@ header .menu ul li a:hover {
     color: #FFFFFF;
 }
 /*---- notes section end ---- */
+
+/*---- brain section start ---- */
+.brain-section .container {
+    display: flex;
+    gap: 60px;
+    margin: 120px auto;
+}
+
+.brain-section .brain-content {
+    padding: 120px 100px 0 0;
+}
+
+.brain-section .brain-content h3 {
+    font-weight: 500;
+    line-height: 20px;
+    color: #469165;
+    text-transform: uppercase;
+}
+
+.brain-section .brain-content h2 {
+    font-weight: 700;
+    font-size: 48px;
+    color: #001931;
+    padding: 16px 0;
+    text-transform: capitalize;
+}
+
+.brain-section .brain-content p {
+    font-weight: 400;
+    line-height: 20px;
+    color: #627382;
+}
+
+.brain-section .brain-content ul {
+    padding-top: 40px;
+}
+
+.brain-section .brain-content ul li {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.brain-section .brain-content ul li p {
+    font-weight: 500;
+    line-height: 20px;
+    color: #001931;
+    padding-left: 6px;
+}
+/*---- brain section end ---- */
+
+/*---- early access section start ---- */
+.early-access .early-content {
+    background-color: #f7f6f2;
+    padding: 80px 40px;
+    border-radius: 12px;
+}
+
+.early-access .early-content .submit-srea {
+    text-align: center;
+}
+
+.early-access .early-content .submit-srea .button-grup-1 {
+    margin: 24px 0 16px 0;
+}
+
+.early-access .early-content .submit-srea .button-grup-1 {
+    margin-top: 24px;
+}
+
+.early-access .early-content .submit-srea p {
+    font-weight: 400;
+    line-height: 20px;
+    color: #627382;
+}
+/*---- early access section end ---- */
+
+/*---- footer section start ---- */
+footer {
+    background-color: #001931;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 120px 0;
+    margin-top: 120px;
+    border-bottom: .005px solid #FAFAFA;
+}
+
+.footer-content .social {
+    margin-right: 107px;
+}
+
+.footer-content .social h3 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
+.footer-content .social ul {
+    display: flex;
+    gap: 16px;
+}
+
+footer .copyright {
+    font-weight: 400;
+    line-height: 24px;
+    color: #FAFAFA;
+    padding: 30px 0;
+    text-align: center;
+}
+/*---- footer section end ---- */
